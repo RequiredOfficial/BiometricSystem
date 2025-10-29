@@ -64,15 +64,7 @@ while True:
         # Прямоугольник для имени
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), color, cv2.FILLED)
         # Имя
-        cv2.putText(
-            frame,
-            name,
-            (left + 6, bottom - 6),
-            cv2.FONT_HERSHEY_DUPLEX,
-            0.8,
-            (255, 255, 255),
-            1,
-        )
+        cv2.putText(frame, name, (left + 6, bottom - 6), cv2.FONT_HERSHEY_DUPLEX, 0.8, (255, 255, 255), 1)
 
     cv2.imshow("Face Recognition", frame)
 
@@ -81,3 +73,4 @@ while True:
 
 video_capture.release()
 cv2.destroyAllWindows()
+
