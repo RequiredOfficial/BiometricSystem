@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontend/styles/style.css">
+    <link rel="icon" href="./images/icon.jpg">
+    <title>Биометрия</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Биометрия</h1>
+            <div>Распознавание лиц с использованием искусственного интеллекта</div>
+        </header>
+        
+        <main class="main">
+            <div class="countainer">
+                <h2>Распознавание</h2>
+                <div class="camera-container">
+                    <div class="camera-placeholder">📷</div>
+                </div>
+                
+                <div class="status-indicator status-ready">
+                    <div class="colorSystemStatus"></div>
+                    <span>Система готова к работе</span>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn btn-primary toggleCamera">Включить камеру</button>
+                    <button class="btn btn-secondary recognitionBtn">Распознавание</button>
+                </div>
+                
+                <div class="status-indicator status-off" style="margin-top: 20px;">
+                    <div class="colorCameraStatus"></div>
+                    <span class="cameraStatus">Камера выключена</span>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>© 2025 Система Биометрии. IT TOP Колледж.</p>
+        </footer>
+    </div>
+    <script src="frontend\scripts\render.js"></script>
+</body>
+</html>
