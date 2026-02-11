@@ -28,20 +28,21 @@ def put_rus_text(img, text, position, font_size=20, color=(255, 255, 255)):
 
 # база данных(заглушка)
 people_info = {
-    "John": {
+    "John": { #КЛЮЧ ДОЛЖЕН СОВПАДАТЬ С known_names!
         "name": "Джон",
         "job": "Разработчик",
         "phone": "+7 999 123-45-67"
     }
 }
 
-# Загружаем фото(неясно на счет расширения мб любое)
+# Загружаем фото
+#face_recognition.load_image_file поддерживает .jpg, .png, .jpeg
 name_image = face_recognition.load_image_file("John.jpg")
 # Распознаём лицо
 name_encoding = face_recognition.face_encodings(name_image)[0]
 
 known_encodings = [name_encoding]
-known_names = ["Nothing"]
+known_names = ["Nothing"] # ДОЛЖНО СОВПАДАТЬ С КЛЮЧОМ В people_info!
 
 # Переменные
 selected_person = None
@@ -94,7 +95,9 @@ while True:
             best_match_index = np.argmin(face_distances)
             if matches[best_match_index]:
                 name = known_names[best_match_index]
-        
+                
+        # Возвращаем координаты к исходному размеру
+        # (были уменьшены в 4 раза для скорости)
         top, right, bottom, left = [x*4 for x in face_location]
         current_faces.append(((top, right, bottom, left), name))
         
@@ -167,3 +170,4 @@ while True:
 
 video_capture.release()
 cv2.destroyAllWindows()
+
