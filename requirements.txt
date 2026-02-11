@@ -3,3 +3,5 @@ opencv-python==4.8.1.78
 numpy==1.24.3
 cmake==3.27.7
 dlib==19.24.2
+pillow==10.1.0
+datetime
