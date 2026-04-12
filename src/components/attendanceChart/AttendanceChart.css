@@ -1,0 +1,75 @@
+.attendanceCountainer {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.attendanceCountainer h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: flex-end;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  border: 1px solid#2c3e50;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  height: 150px;
+  width: 40px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #3498db;
+  border-radius: 5px;
+}
+
+.day {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.numberValue {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.explanText1{
+  text-align: center;
+  color: green;
+}
+
+.explanText2{
+  text-align: center;
+  color: orange;
+}
+
+.explanText3{
+  text-align: center;
+  color: red;
+}

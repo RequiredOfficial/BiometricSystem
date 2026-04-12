@@ -1,0 +1,43 @@
+.form {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid #e0e4e8;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 80px auto 0;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.form .text {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.form p {
+  margin: 0 0 6px 0;
+  font-size: 0.9rem;
+  color: #5a6570;
+}
+
+.form .countainer {
+  margin-bottom: 18px;
+}
+
+.form .source {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.form .source .textSource {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.form .source .textSource:hover {
+  text-decoration: underline;
+}

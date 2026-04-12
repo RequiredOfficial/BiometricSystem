@@ -1,0 +1,46 @@
+.startButton {
+  background: #2c3e50;
+  border: none;
+  min-width: 120px;
+  height: 44px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.startButton:hover {
+  background: #1a252f;
+}
+
+.startInput {
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  padding: 0 14px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+.startInput:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
